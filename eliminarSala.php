@@ -1,6 +1,6 @@
 <?php session_start(); 
 //datos para establecer la conexion con la base de mysql.
-require "cfg/conexion.php";
+require "/home/ubuntu/workspace/cfg/conexion.php";
 
 // verificamos si se han enviado ya las variables necesarias.
 if (isset($_GET["id"])) {
