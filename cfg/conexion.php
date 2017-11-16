@@ -1,6 +1,6 @@
 <?php
     $servidor = "0.0.0.0";
-    $usuario = "vaictor";
+    $usuario = "jmanzanoa";
     $db = "c9";
 
     $conexion = mysql_connect($servidor, $usuario);

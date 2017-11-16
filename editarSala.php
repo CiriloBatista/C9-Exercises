@@ -67,14 +67,14 @@ if (isset($_GET["id"])) {
            placeholder="Introduce nombre del responsable" value="<?=$res;?>" >
   </div>
   <div class="form-group">
-    <label for="ejemplo_password_1">Telefono</label>
+    <label for="ejemplo_password_1">Tel&eacute;fono</label>
     <input name= "tel" type="text" class="form-control" id="ejemplo_password_1" 
            placeholder="Introduce Teléfono" value="<?=$tel;?>" >
   </div>
     <div class="form-group">
     <label for="ejemplo_email_1">E-mail</label>
     <input name= "mail" type="email" class="form-control" id="juan Perez"
-           placeholder="Introduce E-maile" value= "<?=$mail;?>">   
+           placeholder="Introduce E-mail" value= "<?=$mail;?>">   
            
   </div>
     <div class="form-group">
