@@ -1,7 +1,7 @@
 <?php
     $servidor = "0.0.0.0";
     $usuario = "jmanzanoa";
-    $db = "container";
+    $db = "c9";
 
     $conexion = mysql_connect($servidor, $usuario);
         mysql_set_charset('utf8');
