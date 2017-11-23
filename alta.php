@@ -24,6 +24,6 @@ if (isset($_GET["nom"])) {
                 echo 'La sala '.$name.' ha sido registrada de manera satisfactoria.<br/>';
    header('Location: index.php');
             }
-        }
+}
 
 ?>

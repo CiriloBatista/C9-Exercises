@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<?php //session_start(); 
+<?php session_start(); 
 require "/home/ubuntu/workspace/cfg/conexion.php";
 
 
@@ -44,13 +44,13 @@ require "/home/ubuntu/workspace/cfg/conexion.php";
    echo "<td>". $dato ['email_responsable']."</td>";
    echo "<td>". $dato ['ip']."</td>";
    echo "<td>". $dato ['isdn']."</td>";
-   echo "<td><a href='editarSala.php?id=". $dato ['id_sala_remota']."'>Editar</a></td>";
-   echo "<td><a href='eliminarSala.php?id=". $dato ['id_sala_remota']."'>Eliminar</a></td>";
+   echo "<td><a href='editarSala.php' id=". $dato ['id_sala_remota']."'>Editar</a></td>";
+   echo "<td><a href='eliminarSala.php' id=". $dato ['id_sala_remota']."'>Eliminar</a></td>";
    echo "</tr>";
    }
    echo "</table>";
 ?>
-   <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">Angregar Sala</button>
+   <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">Agregar Sala</button>
    </div>
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
