@@ -22,7 +22,7 @@ if (isset($_GET["nom"])) {
                 $query = 'INSERT INTO SALA_REMOTA (nombre, telefono, email_responsable, ip, issdn) VALUES ("'.$name.'","'.$responsable.'","'.$telefono.'","'.$email.'","'.$ip.'","'.$isdn.'")';
                 mysql_query($query) or die(mysql_error());
                 echo 'La sala '.$name.' ha sido registrada de manera satisfactoria.<br/>';
-   header('Location: index.html');
+   header('Location: listar.php');
             }
 }
 

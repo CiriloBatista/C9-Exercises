@@ -34,8 +34,8 @@ require "/home/ubuntu/workspace/cfg/conexion.php";
    $resultado=mysql_query($query);
    echo "<div class='container'>";
    echo "<table class='table table-striped'>";
-   echo "<th> Nombre de Sala</th> <th>Respondable de Sala</th> <th>Telefono</th> <th>E-Mail</th> <th>IP</th> <th>ISDN</th> <th>Editar</th> <th>Eliminar</th>";
-   while ($dato=mysql_fetch_array($resultado)) {
+   echo "<th>Nombre de Sala</th> <th>Responsable de Sala</th> <th>Tel&eacute;fono</th> <th>E-Mail</th> <th>IP</th> <th>ISDN</th> <th>Editar</th> <th>Eliminar</th>";
+   while ($dato=mysql_fetch_row( resource,$resultado)) {
    
    echo "<tr>";  
    echo "<td>". $dato['nombre']."</td>";

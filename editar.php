@@ -1,4 +1,5 @@
-<?php session_start(); 
+<?php
+session_start(); 
 //datos para establecer la conexion con la base de mysql.
 require "/home/ubuntu/workspace/cfg/conexion.php";
 
