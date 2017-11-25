@@ -11,5 +11,5 @@ if (isset($_GET["id"])) {
                 mysql_query($query) or die(mysql_error());
 }
 
-   header('Location: index.php');
+   header('Location: index.html');
 ?>

@@ -15,18 +15,17 @@ if (isset($_GET["nom"])) {
     
     
     
-    
+}
     // Hay campos en blanco
     if($name==NULL|$responsable==NULL|$telefono==NULL|$email==NULL|$ip==NULL|$isdn==NULL) {
-        echo "un campo est&aacute; vacio.";
-        formRegistro();
+        echo "Cuidado un campo est&aacute; vac&iacute;o. ";
+        //formRegistro();
     }else{
-
-                $query = 'UPDATE SALA_REMOTA SET nombre="'.$name.'", responsable="'.$responsable.'", telefono="'.$telefono.'", email_responsable="'.$email.'", ip="'.$ip.'", isdn="'.$isdn.'" WHERE id_sala_remota='.$id;
-                mysql_query($query) or die(mysql_error());
-                echo 'La sala '.$name.' se ha modificado satisfactoria.<br/>';
-   header('Location: listar.php');
-            }
-        }
+        $query = 'UPDATE SALA_REMOTA SET nombre="'.$name.'", responsable="'.$responsable.'", telefono="'.$telefono.'", email_responsable="'.$email.'", ip="'.$ip.'", isdn="'.$isdn.'" WHERE id_sala_remota='.$id;
+        mysql_query($query) or die(mysql_error());
+        echo 'La sala '.$name.' se ha modificado satisfactoria.<br/>';
+    header('Location: listar.php');
+    }
+        
 
 ?>
