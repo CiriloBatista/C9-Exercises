@@ -19,7 +19,6 @@
 
 
 </head>
-
 <body>
 <?php session_start(); 
 require "/home/ubuntu/workspace/cfg/conexion.php";
@@ -49,6 +48,9 @@ require "/home/ubuntu/workspace/cfg/conexion.php";
    <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">Agregar Sala</button>
    </div>
 
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.0.js"></script>
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
 

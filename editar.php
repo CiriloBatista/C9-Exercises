@@ -14,8 +14,7 @@ if (isset($_GET["nom"])) {
     $id = $_GET["id"];
     
     
-    
-}
+    }
     // Hay campos en blanco
     if($name==NULL|$responsable==NULL|$telefono==NULL|$email==NULL|$ip==NULL|$isdn==NULL) {
         echo "Cuidado un campo est&aacute; vac&iacute;o. ";
@@ -23,8 +22,8 @@ if (isset($_GET["nom"])) {
     }else{
         $query = 'UPDATE SALA_REMOTA SET nombre="'.$name.'", responsable="'.$responsable.'", telefono="'.$telefono.'", email_responsable="'.$email.'", ip="'.$ip.'", isdn="'.$isdn.'" WHERE id_sala_remota='.$id;
         mysql_query($query) or die(mysql_error());
-        echo 'La sala '.$name.' se ha modificado satisfactoria.<br/>';
-    header('Location: listar.php');
+        echo 'La sala "'.$name.'" se ha modificado satisfactoria.<br/>';
+    header("Location: listar.php");
     }
         
 
