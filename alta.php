@@ -3,11 +3,11 @@
 require "cfg/conexion.php";
 
 // verificamos si se han enviado ya las variables necesarias.
-if (isset($_GET["nombre"])) {
-    $name = $_GET["nombre"];
-    $responsable = $_GET["responsable"];
-    $telefono = $_GET["telefono"];
-    $email = $_GET["email_responsable"];
+if (isset($_GET["nom"])) {
+    $name = $_GET["nom"];
+    $responsable = $_GET["res"];
+    $telefono = $_GET["tel"];
+    $email = $_GET["mail"];
     $ip = $_GET["ip"];
     $isdn = $_GET["isdn"];
     

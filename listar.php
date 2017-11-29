@@ -39,8 +39,8 @@ require "/home/ubuntu/workspace/cfg/conexion.php";
      echo "<td>". $dato ['email_responsable']."</td>";
      echo "<td>". $dato ['ip']."</td>";
      echo "<td>". $dato ['isdn']."</td>";
-     echo "<td><a href='editarSala.php' id=". $dato ['id_sala_remota']."'>Editar</a></td>";
-     echo "<td><a href='eliminarSala.php' id=". $dato ['id_sala_remota']."'>Eliminar</a></td>";
+     echo "<td><a href='editarSala.php?id_sala_remota=". $dato ['id_sala_remota']."'>Editar</a></td>";
+     echo "<td><a href='eliminarSala.php?id_sala_remota=". $dato ['id_sala_remota']."'>Eliminar</a></td>";
      echo "</tr>";
    }
    echo "</table>";
