@@ -3,11 +3,11 @@
 require "cfg/conexion.php";
 
 // verificamos si se han enviado ya las variables necesarias.
-if (isset($_GET["nom"])) {
-    $name = $_GET["nom"];
-    $responsable = $_GET["res"];
-    $telefono = $_GET["tel"];
-    $email = $_GET["mail"];
+if (isset($_GET["nombre"])) {
+    $name = $_GET["nombre"];
+    $responsable = $_GET["responsable"];
+    $telefono = $_GET["telefono"];
+    $email = $_GET["email_responsable"];
     $ip = $_GET["ip"];
     $isdn = $_GET["isdn"];
     
@@ -19,10 +19,10 @@ if (isset($_GET["nom"])) {
         //formRegistro();
     }else{
 
-                $query = "INSERT INTO SALA_REMOTA (nombre, responsable, telefono, email_responsable, ip, isdn) VALUES (".$name.",".$responsable.",".$telefono.",".$email.",".$ip.",".$isdn.")";
+                $query = 'INSERT INTO SALA_REMOTA (nombre, responsable, telefono, email_responsable, ip, isdn) VALUES ("'.$name.'","'.$responsable.'","'.$telefono.'","'.$email.'","'.$ip.'","'.$isdn.'")';
                 mysql_query($query) or die(mysql_error());
-                echo "La sala ".$name." ha sido registrada de manera satisfactoria.</br>";
-   header("Location: listar.php");
+                echo 'La sala '.$name.' ha sido registrada de manera satisfactoria.</br>';
+   header('Location: listar.php');
             }
 }
 

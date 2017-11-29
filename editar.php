@@ -4,20 +4,20 @@ session_start();
 require "/home/ubuntu/workspace/cfg/conexion.php";
 
 // verificamos si se han enviado ya las variables necesarias.
-if (isset($_GET["nom"])) {
-    $name = $_GET["nom"];
-    $responsable = $_GET["res"];
-    $telefono = $_GET["tel"];
-    $email = $_GET["mail"];
+if (isset($_GET["nombre"])) {
+    $name = $_GET["nombre"];
+    $responsable = $_GET["responsable"];
+    $telefono = $_GET["telefono"];
+    $email = $_GET["email_responsable"];
     $ip = $_GET["ip"];
     $isdn = $_GET["isdn"];
-    $id = $_GET["id"];
+    $id = $_GET["id_sala_remota"];
     
     
     }
     // Hay campos en blanco
     if($name==NULL|$responsable==NULL|$telefono==NULL|$email==NULL|$ip==NULL|$isdn==NULL) {
-        echo "Cuidado un campo est&aacute; vac&iacute;o. ";
+        echo "Cuidado! un campo est&aacute; vac&iacute;o. ";
         //formRegistro();
     }else{
         $query = 'UPDATE SALA_REMOTA SET nombre="'.$name.'", responsable="'.$responsable.'", telefono="'.$telefono.'", email_responsable="'.$email.'", ip="'.$ip.'", isdn="'.$isdn.'" WHERE id_sala_remota='.$id;

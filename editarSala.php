@@ -3,11 +3,11 @@
 require "cfg/conexion.php";
 
 // verificamos si se han enviado ya las variables necesarias.
-if (isset($_GET["id"])) {
-    $id = $_GET["id"];
+if (isset($_GET["id_sala_remota"])) {
+    $id = $_GET["id_sala_remota"];
 
 
-    $query="select * from SALA_REMOTA WHERE id_sala_remota=$id";
+    $query="select * from SALA_REMOTA WHERE id_sala_remota=".$id;
     mysql_query($query) or die(mysql_error());
     
      $resultado=mysql_query($query);
@@ -15,10 +15,10 @@ if (isset($_GET["id"])) {
        $nom = $dato['nombre'];
        $res = $dato['responsable'];
        $tel = $dato['telefono'];
-       $mail = $dato["email_responsable"];
-       $ip = $dato["ip"];
-       $isdn = $dato["isdn"];
-       $id = $dato["id_sala_remota"];
+       $mail = $dato['email_responsable'];
+       $ip = $dato['ip'];
+       $isdn = $dato['isdn'];
+       $id = $dato['id_sala_remota'];
     
    }
     
