@@ -84,7 +84,7 @@ if (isset($_GET["id_sala_remota"])) {
     <input name= "isdn" type="text" class="form-control" id="juan Perez"
            placeholder="Introduce ISDN" value= "<?=$isdn;?>">
   </div>
-  <button type="submit" class="btn btn-success">Enviar</button>
+  <button type="submit" class="btn btn-success">Actualizar</button>
 </form>
 </div>
 

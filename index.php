@@ -45,9 +45,9 @@ require "/home/ubuntu/workspace/cfg/conexion.php";
    }
    echo "</table>";
 ?>
-   <button type="button" class="btn btn-success" onclick="window.location.href='index.html'">Agregar Sala</button>
+   <button type="button" class="btn btn-success" onclick="window.location.href='listar.html'">Agregar Sala</button>
    </div>
-
+ 
     <!-- jQuery -->
     <script src="js/jquery-1.11.0.js"></script>
     

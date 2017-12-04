@@ -10,5 +10,5 @@ if (isset($_GET["id_sala_remota"])) {
          mysql_query($query) or die(mysql_error());
 }
 
-   header('Location: listar.php');
+   header('Location: index.php');
 ?>

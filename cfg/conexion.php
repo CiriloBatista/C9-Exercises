@@ -9,7 +9,7 @@
         die("No pudo conectarse: " . mysql_error());
     }
     else{
-       echo 'Conectado  satisfactoriamente al servidor <br>';
+       echo '';
     }
     mysql_select_db($db, $conexion) or die(mysql_error($conexion));
 ?>
